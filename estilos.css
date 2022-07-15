@@ -1,0 +1,45 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: rgb(20, 105, 131);
+    color: white;
+    padding: 20px;
+}
+
+body {
+    margin: 0;
+    background-color: #efefef;
+}
+
+.empresa {
+    margin: 1px;
+}
+#ContactInfo {
+    background-color: rgb(180, 180, 180);
+    color: rgb(0, 0, 0);
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 900px;
+    width: 18%;
+    display: inline-block;
+    float: left;
+}
+
+.infoPerso {
+    display: inline-block;
+    width: 70%;
+    float: right;    
+}
+
+.SubTitulo {
+    background-color: orangered;
+    color: white;
+    padding: 13px
+}
+
+#miImagen{
+    transform: rotate(-10deg);
+}
