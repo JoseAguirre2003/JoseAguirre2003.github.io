@@ -26,6 +26,7 @@ body {
     width: 18%;
     display: inline-block;
     float: left;
+    overflow: hidden;
 }
 
 .infoPerso {
