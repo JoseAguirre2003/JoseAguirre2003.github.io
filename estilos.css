@@ -1,46 +1,209 @@
-html {
-    font-family: 'Roboto', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
-header {
-    background-color: rgb(20, 105, 131);
-    color: white;
-    padding: 20px;
-}
-
-body {
+* {
+    box-sizing: border-box;
     margin: 0;
-    background-color: #efefef;
 }
 
-.empresa {
-    margin: 1px;
-}
-#ContactInfo {
-    background-color: rgb(180, 180, 180);
-    color: rgb(0, 0, 0);
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 900px;
-    width: 18%;
-    display: inline-block;
-    float: left;
-    overflow: hidden;
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
 }
 
-.infoPerso {
-    display: inline-block;
-    width: 70%;
-    float: right;    
+/*HEADER*/
+header{
+    height: 5vh;
+    background-color: #304156;
+    padding: 5%;
+    color: whitesmoke;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 3vw;
+}
+/*FIN HEADER*/
+
+/*Columna Contacto*/
+#contact{
+    background-color: #c4c4c4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
 }
 
-.SubTitulo {
-    background-color: orangered;
-    color: white;
-    padding: 13px
+#contactFirstDiv{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 3vw;
 }
 
-#miImagen{
-    transform: rotate(-10deg);
+.contactBlockInfo{
+    display: flex;
+    flex-direction: row;
+}
+
+ion-icon{
+    font-size: 20px;
+}
+
+#imgSec{
+    height: 40vw;
+    transform: rotate(-7deg);
+    margin: 5% 0 5% 0;
+    box-shadow: 16px 13px 2px 1px rgba(0,0,0,0.75);
+}
+
+/*FIN Columna Contacto*/
+
+/*BOTONES*/
+
+#botonesDiv{
+    background-color: blueviolet;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-evenly
+}
+
+.botonInf{
+    height: 100%;
+    width: 33.33%;
+    text-align: center;
+    transition: 0.8s;
+}
+
+.botonInf:hover{
+    cursor: pointer;
+    background-color: rgb(169, 105, 229);
+    transition: 0.8s;
+}
+
+/*FIN BOTONES*/
+
+/*Columna Informacion*/
+
+#experienciaContent, #programContent{
+    display: none;
+}
+
+article{
+    font-size: 4vw;
+    margin-bottom: 4%;
+}
+
+td{
+    font-size: 3vw;
+}
+
+.subNaranja{
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    margin-bottom: 2%;
+    background-color: #fd6900;
+    color: whitesmoke;
+    font-size: 4vw;
+}
+
+.subNaranja + div{
+    margin: 0 3% 0 3%;
+}
+
+.tiempoTrabajo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.expLaboral{
+    margin-top: 10px;
+    margin: 0 3% 0 3%;
+}
+
+.expLaboral > h5{
+    margin-top: 10px;
+    border-bottom: 1px solid black;
+    padding-bottom: 7px;
+}
+
+.expLaboral ul{
+    list-style: square;
+}
+
+#divHablidades div{
+    margin: 2%;
+}
+
+.lenguaje{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+}
+
+.lenguaje h3{
+    margin-left: 1rem;
+}
+
+.lenguajeIcon{
+    height: 10rem;
+    width: 9rem;
+    margin: 2.5%;
+}
+
+footer{
+    background-color: #304156;
+    color: whitesmoke;
+    font-size: 1vw;
+}
+
+/*FIN Columna Informacion*/
+
+@media screen and (min-width: 1000px){
+
+    header{
+        font-size: 2vw;
+    }
+
+    main{
+        display: flex;
+        flex-direction: row;
+        padding: 0% 6%;
+    }
+
+    #imgSec{
+        height: 15vw;
+        margin-bottom: 20%;
+    }
+    
+    #contact{
+        margin-top: -10vh;
+        margin-right: 5%;
+        width: 25rem;
+        padding: 5%;
+    }
+
+    #columna2{
+        width: 75%;
+    }
+
+    #contactFirstDiv{
+        font-size: 1rem;
+        flex-direction: column;
+    }
+
+    .contactBlockInfo{
+        margin: 5% 0%;
+    }
+
+    article{
+        font-size: 1.5rem;
+    }
+
+    .subNaranja{
+        font-size: 1.5rem;
+    }
+
+    td{
+        font-size: 1.5rem;
+    }
 }
